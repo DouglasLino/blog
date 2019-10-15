@@ -1,0 +1,189 @@
+body {
+    /*definimos una lista de fuentes*/
+    font-family: 'Handlee', cursive;
+    /*definimos el tamaño de fuente*/
+    font-size: 13pt;
+    /*definimos el color del fono*/
+    background-color: #efefef;
+    /*espacio de relleno, entre el contenido del elemento y su borde*/
+    padding: 10px;
+    
+}
+h1 {
+    /*definimos una lista de fuentes*/
+    font-size: 15pt;
+    /*definimos el color de letra*/
+    color: black;
+    /* la orientacion del texto**/
+    text-align: center;
+    /*espacio de relleno, entre el contenido del elemento y su borde*/
+    padding: 18px 0 18px 0;
+    /*establee el margen para los cuatro lados*/
+    margin: 0 0 10px 0;
+}
+
+
+/*para que no se muestre tanto espacio*/
+p {
+    /*espacio de relleno, entre el contenido del elemento y su borde*/
+    padding: 0;
+    /*establee el margen para los cuatro lados*/
+    margin: 0;
+}
+
+/*redondeamos la imagen*/
+.img-circle {
+    /*definimos el ancho, estilo solido, color blanco del borde*/
+    border: 3px solid white;
+    /*redondeamos las esquinas*/
+    border-radius: 50%;
+}
+
+
+/*definimos que cada seccion tenga un color de fondo, con un paddin
+ y un margen redondo pa que se vea bonito*/
+.section {
+    /*definimos el color del fono*/
+    background-color: #fff;
+    /*espacio de relleno, entre el contenido del elemento y su borde*/
+    padding: 15px;
+    /*agregamos un margen abajo del contendio*/
+    margin-bottom: 10px;
+     /*redondeamos las esquinas*/
+    border-radius: 10px;
+    
+}
+
+
+/*le ponemos un fondo bien chulo*/
+#header {
+    /*definimos una imagen de fondo*/
+    background-image: url("img/fondo.png");
+    /*especificamos el tamaño del fondo que sea al mayor tamaño posible
+    sin recortarla ni estirarla*/
+    background-size: contain;
+ 
+}
+
+/*modificamos las dimenciones de la imagen */
+#header img {
+    /*esto es para centrarla*/
+
+    /*especficamos el tipo de cuadro de representacion, en block
+    genera un cuadro de elemento en blqoue*/
+    display: block;
+
+    /*el margen sea automatico*/
+    margin: auto;
+
+    /*especificamos la anchura del area de contenido de un elemento*/
+    width: 30vh;
+    /*especificamos la altura del area de contenido de un elemento*/
+    height: 35vh;
+    
+}
+
+/*le damos estilo al parrafo, lo centramos y bien paloma*/
+#header p {
+    /*definimos el tamaño de fuente*/
+    font-size: 25pt;
+    /*definimos el color de letra*/
+    color: #3b464c;
+    /*espacio de relleno, entre el contenido del elemento y su borde en la parte superior*/
+    padding-top: 5px;
+
+    /*especificamos el grueso ancho de la letra*/
+    font-weight: bold;
+    /*aliniamos el texto en medio*/
+    text-align: center;
+}
+ 
+/*poner el cursor sobre los botones se cambien de color*/
+#buttons input:hover {
+    /*colocamos un color de fondo*/
+    background-color: #43a09d;
+    /*cambiamos el color del texto*/
+    color: white;
+}
+
+
+/*le cambiamos la fuente, el tamaño y borde*/
+input {
+    /*establee el margen en la parte de abajo*/
+    margin-bottom: 10px;
+    /*definimos el tamaño de fuente*/
+    font-size: 11pt;
+    /*espacio de relleno, entre el contenido del elemento y su borde*/
+    padding: 15px 10px ;
+    /*definimos el ancho, estilo solido, color blanco del borde*/
+    border: 1px solid #cecece;
+    /*colocamos un color de fondo*/
+    background-color: #efefef;
+    /*colocamos un color para el texto*/
+    color: #787575;
+    /*redondeamos las esquinas*/
+    border-radius: 5px;
+    /*especificamos la anchura del area de contenido de un elemento*/
+    width: 10em;
+    /*establee el margen para los cuatro lados*/
+    margin: 0.5em;
+    
+}
+
+ 
+/*modificamos que el texto sea pequeño y a la derecha*/
+.copyright {
+    /*definimos el tamaño de fuente*/
+    font-size: 8pt;
+    /*aliniamos el texto en la derecha*/
+    text-align: right;
+    /*espacio de relleno, entre el contenido del elemento y su borde en la parte inferior*/
+    padding-bottom: 10px;
+    /*colocamos un color para el texto*/
+    color: grey;
+}
+
+
+/*para que se agrupe bien chido*/
+#buttons{
+    /*definimos como un contenedor flexible*/
+    display: flex;
+
+    /*es un atajo para las propiedades individuales de flex-direction y flex-wrap*/
+    /*row = el eje principal este en fila*/
+    /*wrap = decimos que los elementos flexibles se dividen en varias lineas.*/
+    flex-flow: row wrap;
+    /*definimos como los elementos flexibles se diponen a lo largo del eje principal en la linea en curo.*/
+    justify-content: center;
+    
+     
+}
+
+/*clase para ocultar las cosas*/
+.oculta{
+    /*no mostramos el elemento*/
+    display: none;
+}
+
+/* para que se sentre y un ponere un poco de margin*/
+.fotos{
+    /*esto es para centrarla*/
+
+    /*especficamos el tipo de cuadro de representacion, en block
+    genera un cuadro de elemento en blqoue*/
+    display:block;
+    /*colocamos un margen superior y que lo demas sea automatico*/
+    margin: 50px auto;
+
+    /*especificamos la anchura del area de contenido de un elemento*/
+    width: 90%;
+
+    /*especificamos la altura del area de contenido de un elemento*/
+    height: 90%;
+
+
+}
+
+ 
+
+ 

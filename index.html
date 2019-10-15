@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header" class="section">
+        <img alt="Douglas Lino" class="img-circle" src="img/foto.JPG">
+        <p>Douglas Lino - 00018318</p>
+
+    </div>
+    <!-- header end -->
+    <div id="buttons">
+        <input id="button_1" type="button" name="" value="Dia 1">
+        <input id="button_2" type="button" name="" value="Dia 2">
+        <input id="button_3" type="button" name="" value="Dia 3">
+        <input id="button_4" type="button" name="" value="Dia 4">
+        <input id="button_5" type="button" name="" value="Dia 5">
+
+    </div>
+    <!-- capitulo uno start -->
+    <div id="capitulo_1" class="section ">
+        <h1 class="borde" >Begin </h1>
+        <p>
+                Creamos un función que valide si un dui es correcto, seleccionamos un DUI, por ejemplo: 01771967-8 -> Dígito verificador: 8 y lo seccionamos por posiciones </p>
+                <p>Posición -> 9     8     7     6     5     4     3      2 </p> 
+                <p>DUI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -> 0     1     7     7     1     9     6      7  </p>
+                <p>
+                    Luego debemos de multiplicar cada digito del dui por su posiciones y sumarlo todo:
+                    suma  = (9*0)+(8*1)+(7*7)+(6*7)+(5*1)+(4*9)+(3*6)+(2*7) => 172
+                </p>
+                <p>
+                     a la suma le sacamos el modulo  de 10, que nos da resultado 2
+                </p>    
+                <p> 
+                    y del numero 10 le restamos el modulo, resta = 10 - resto => 10 - 2 = 8
+                </p>
+                <p>   si nos devuelve el numero verificador, quiere decir que es correcto
+                    Dígito verificador=Resta (8=8) => DUI valido.
+                </p>
+                
+      <img src="img/capitulo_1.png" alt="capitulo 1" class="fotos"> 
+
+    </div>
+    <!--  capitulo uno end -->
+
+    <!-- capitulo dos start -->
+    <div id="capitulo_2" class="section oculta">
+        <h1><span>O-O-O</span></h1>
+        <p>
+            Crear dos trigres que rechaza la inserccion o actualización para que trabaje solo en un departamento, validando el dato del DUI.
+        </p>
+        <img src="img/capitulo_2.png" alt="capitulo 1" class="fotos"> 
+    </div>
+    <!--  capitulo dos end -->
+
+
+    <!-- capitulo tres start -->
+    <div id="capitulo_3" class="section oculta">
+        <h1><span>minus monocromo</span></h1>
+        <p>
+            Resolver una incoherencia entre la clasificaicon de miembro en sus subclases y el atributo que tiene llamado denominación_departamento, entones cuando se inserte o se actualize debe de comprobar la coincidencia del departamento expresado en el atributo, si no es asi se debe rechazar.
+        </p>
+        <img src="img/capitulo_3.png" alt="capitulo 1" class="fotos"> 
+    </div>
+    <!--  capitulo tres end -->
+
+    <!-- capitulo cuatro start -->
+    <div id="capitulo_4" class="section oculta">
+        <h1><span>cumulonimbus</span></h1>
+        <p>
+            crear dos  funciones, una  que al eliminar un elemento de la subclase, lo elimine tambien de la superclase y otra que no pueda existir el mismo objeto en mas de una subclase.
+        </p>
+        <img src="img/capitulo_4_1.png" alt="capitulo 1" class="fotos"> 
+        <img src="img/capitulo_4_2.png" alt="capitulo 1" class="fotos"> 
+    </div>
+    <!--  capitulo cuatro end -->
+
+
+    <!-- capitulo cinco start -->
+    <div id="capitulo_5" class="section oculta">
+            <h1><span>Commit</span></h1>
+            <p>
+                Finaliza la actividad,  en el cual no pudo lorgar salir con vida.
+            </p>
+            <img src="img/capitulo_5.png" alt="capitulo 1" class="fotos"> 
+        </div>
+        <!--  capitulo cinco end -->    
+
+        <div class="copyright">
+            &copy; 2019 Tarea 3.  All rights reserved.
+        </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
